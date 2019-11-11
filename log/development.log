@@ -984,3 +984,12 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/posts/6/edit" for 104.227.193.52 at 2019-11-11 02:14:16 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
