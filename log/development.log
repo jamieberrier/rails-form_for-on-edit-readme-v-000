@@ -1028,3 +1028,22 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/posts" for 104.227.193.52 at 2019-11-11 02:14:29 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pC20JjeKes5ih0+btn/bL02tcDvgLZ11V0hzQCcApibadfjuzI4JaNAPVYPtM3Hn5jn6RLwWpNhqJuxzhz5vCA==", "title"=>"gngsfngs", "description"=>"gnmgfmns", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "gngsfngs"], ["description", "gnmgfmns"], ["created_at", "2019-11-11 02:14:29.841461"], ["updated_at", "2019-11-11 02:14:29.841461"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://165.227.60.187:43534/posts/7
+Completed 302 Found in 7ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/posts/7" for 104.227.193.52 at 2019-11-11 02:14:29 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
