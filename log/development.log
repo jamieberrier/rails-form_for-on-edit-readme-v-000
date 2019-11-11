@@ -979,3 +979,8 @@ Started GET "/posts/6" for 104.227.193.52 at 2019-11-11 02:14:12 +0000
 Processing by PostsController#show as HTML
   Parameters: {"id"=>"6"}
   [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
