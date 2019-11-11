@@ -890,3 +890,23 @@ Processing by PostsController#edit as HTML
 Completed 200 OK in 72ms (Views: 68.6ms | ActiveRecord: 0.1ms)
 
 
+Started PATCH "/posts/6" for 104.227.193.52 at 2019-11-11 02:11:26 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kiZJk4ymh7A3Apotrv3UYCuMdA4LXeE7NryiqYtQ+FHsfgVbd6L0FoWKgDX1sX6ogBj+cVdm2JYL0j2aK24xfw==", "post"=>{"title"=>"vnfnsfgngf", "description"=>"nfgsngfmnsfgmfsgmskahsvlkdshv;ghewigvdsnvbdosgb"}, "commit"=>"Update Post", "id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", nil], ["description", nil], ["updated_at", "2019-11-11 02:11:26.448327"], ["id", 6]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://165.227.60.187:43534/posts/6
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/posts/6" for 104.227.193.52 at 2019-11-11 02:11:26 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.1ms)
+
+
