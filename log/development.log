@@ -1021,3 +1021,10 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/posts/new" for 104.227.193.52 at 2019-11-11 02:14:25 +0000
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
